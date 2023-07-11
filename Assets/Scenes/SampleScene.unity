@@ -354,6 +354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 470756541}
   - component: {fileID: 470756540}
+  - component: {fileID: 470756542}
   m_Layer: 0
   m_Name: Line Renderer
   m_TagString: Untagged
@@ -381,7 +382,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10651, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -403,8 +404,8 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: 186.4, y: 0.33, z: 104.13}
-  - {x: 169.91, y: 0, z: 40.91}
+  - {x: 150, y: 30, z: 90}
+  - {x: 100, y: 30, z: 60}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -412,8 +413,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 1
+        time: 0.008377075
+        value: 0.28930855
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -475,6 +476,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &470756542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470756539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4b383f349f4a1541ac8c013cbe022c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!850595691 &568870621
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -549,6 +562,7 @@ GameObject:
   - component: {fileID: 620294398}
   - component: {fileID: 620294397}
   - component: {fileID: 620294396}
+  - component: {fileID: 620294399}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: Untagged
@@ -637,6 +651,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &620294399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620294394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58be54947bece894b8b055761ee221bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {fileID: 926508095}
+  - {fileID: 266120529}
+  line: {fileID: 470756542}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
